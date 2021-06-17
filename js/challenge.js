@@ -44,7 +44,7 @@ const buildLikesLI = () => {
         likesUL.append(li);
     } else {
         likes++;
-        document.getElementById(li.id).innerText = `${counter.innerText} has been liked ${likes} times.`;
+        document.getElementById(li.id).innerHTML = (counter.innerText + "has been liked <span>"+likes+"</span> times.");
     }
 }
 
